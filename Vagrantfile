@@ -39,7 +39,7 @@ Vagrant.configure(2) do |config|
       }
   end
   if Vagrant.has_plugin?("vagrant-berkshelf")
-    config.berkshelf.enabled = true #Vagrant Bekshelfを利用する
+    config.berkshelf.enabled = false #Vagrant Bekshelfを利用する
   end
   nodes={
     'knife' => {
